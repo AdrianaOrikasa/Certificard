@@ -1,8 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Explora&display=swap');
+
+* {
+padding:0;
+margin:0;
+vertical-align:baseline;
+list-style:none;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(236.85deg, #C06C84 27.26%, #355C7D 96.03%) 
+  background: linear-gradient(236.85deg, #C06C84 27.26%, #355C7D 96.03%);
+}
+
+/* Logo
+*/
+
+#logo {
+  height: 40px;
+  padding: 5px;
+  background: #333439;
+  color: #F6F6F6;
+}
+
+#logo h4 {
+  font-family: 'Explora', cursive;
+  font-size: 37px;
+  display: flex;
+	float: left;
+  margin-left: 15px;
+}
+
+/* Barra de navegação
+*/
+
+.menu ul {
+	list-style: none;
+  text-decoration: none;
+	display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-top: 10px;
+}
+
+.menu ul li {
+  margin-left: 3px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #F6F6F6;
+  padding: 15px;
 }
 
 .container {
@@ -58,35 +107,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-top: 35px;
-  background: linear-gradient(230.65deg, #C06C84 5%, #6C5B7B 90.19%);
-  box-shadow: 2px 2px 4px #0E1D2F;
+  background: linear-gradient(230.65deg, #d8c6cb 5%, #d9d9db 90.19%);
+  box-shadow: 2px 2px 4px #787878;
   border-radius: 20px;
-}
-
-.resumo-esquerda {
-  color: #1C1C1C;
-  padding: 45px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-basis: 40%;
-}
-
-.resumo-direita {
-  color: #1C1C1C;
-  padding: 45px;
-  display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-basis: 40%;
 }
 
 .cont-projeto {
   margin-top: 35px;
-  background: linear-gradient(230.65deg, #C06C84 5%, #6C5B7B 90.19%);
-  box-shadow: 2px 2px 4px #0E1D2F;
+  background: linear-gradient(230.65deg, #d8c6cb 5%, #d9d9db 90.19%);
+  box-shadow: 2px 2px 4px #787878;
   border-radius: 20px;
 }
 .projetos {
@@ -123,13 +152,21 @@ body {
   background: linear-gradient(236.85deg, #355C7D 27.26%, #6C5B7B 96.83%);
 }
 
+.dark .projetos p {
+  color: #F6F6F6;
+}
+
+.dark .projetos ul {
+  color: #F6F6F6;
+}
+
 .dark .container {
   background: #333439;
   color: #F6F6F6;
 }
 
 .dark .projetos {
-  color: #1C1C1C;
+  color: #F6F6F6;
 }
 
 .dark .tema button {
@@ -140,15 +177,15 @@ body {
 
 .dark .cont-projeto {
   margin-top: 35px;
-  background: linear-gradient(230.65deg, #6C5B7B 5%, #355C7D 90.19%);
-  box-shadow: 2px 2px 4px #0E1D2F;
+  background: linear-gradient(230.65deg, #1c1c1c 5%, #000000 90.19%);
+  box-shadow: 2px 2px 4px #0b0b0b;
   border-radius: 20px;
 }
 
 .dark .cont-projeto2 {
   margin-top: 35px;
-  background: linear-gradient(230.65deg, #6C5B7B 5%, #355C7D 90.19%);
-  box-shadow: 2px 2px 4px #0E1D2F;
+  background: linear-gradient(230.65deg, #1c1c1c 5%, #000000 90.19%);
+  box-shadow: 2px 2px 4px #0b0b0b;
   border-radius: 20px;
 }
 
